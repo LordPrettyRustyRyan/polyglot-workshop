@@ -1,0 +1,15 @@
+{
+  "name": "firstnodework",
+  "version": "1.0.0",
+  "description": "nice one",
+  "main": "testmodule1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Imagine",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
