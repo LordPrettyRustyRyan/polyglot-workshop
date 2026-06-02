@@ -47,7 +47,7 @@ l = ["Harry", "Shubh", "Vivaan"]
 
 name = input("Enter you name to check: ")
 
-if (name in l):
+if (name.capitalize() in l):
     print("yes")
     
 else:
