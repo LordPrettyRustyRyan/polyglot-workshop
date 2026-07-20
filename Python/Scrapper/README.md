@@ -3,8 +3,16 @@ A Python tool that grabs **book titles, prices, and ratings** from the multi-pag
 Save all that info straight into a **CSV** – no manual copying needed.
 Perfect for data nerds or quick web scraping practice.
 
-<img width="1047" height="623" alt="image" src="https://github.com/user-attachments/assets/1eccb083-02d8-4058-9e25-3cc5b3901c11" />
-<img width="1148" height="592" alt="image" src="https://github.com/user-attachments/assets/d6a8b500-666f-445a-8340-4cf3d779119f" />
+<table>
+  <tr>
+    <td style="border:1px solid #30363d; border-radius:6px; padding:6px;">
+      <img width="1047" height="524" alt="Scrapper in CLI" src="https://github.com/user-attachments/assets/3a1f4405-d3db-4f89-8bc9-8daa3fec154f" />
+    </td>
+    <td style="border:1px solid #30363d; border-radius:6px; padding:6px;">
+      <img width="1148" height="574" alt="Scrapper CSV file" src="https://github.com/user-attachments/assets/e1fc83ee-0240-4027-bec3-aa1804687bdb" />
+    </td>
+  </tr>
+</table>
 
 ---
 
