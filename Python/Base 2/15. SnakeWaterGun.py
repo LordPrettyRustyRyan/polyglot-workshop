@@ -1,3 +1,5 @@
+# -------------------------------------------------------- //-- SNAKE WATER GUN GAME --//
+
 import random
 '''
 1 for snake
@@ -20,28 +22,28 @@ if(computer == you):
 
 else:
     '''
-     if(computer ==-1 and you == 1): (computer - you) = -2
+    if(computer ==-1 and you == 1): #(computer - you) = -2
         print("You win!")
 
-    elif(computer ==-1 and you == 0): (computer - you) = -1
+    elif(computer ==-1 and you == 0): #(computer - you) = -1
         print("You Lose!")
 
-    elif(computer == 1 and you == -1): (computer - you) = 2
+    elif(computer == 1 and you == -1): #(computer - you) = 2
         print("You lose!")
 
-    elif(computer ==1 and you == 0): (computer - you) = 1
+    elif(computer ==1 and you == 0): #(computer - you) = 1
         print("You Win!")
 
-    elif(computer ==0 and you == -1): (computer - you) = 1
+    elif(computer ==0 and you == -1): #(computer - you) = 1
         print("You Win!")
 
-    elif(computer == 0 and you == 1): computer - you) = -1
+    elif(computer == 0 and you == 1): #(computer - you) = -1
         print("You Lose!") 
 
-        The below logic is written on the basis of the value of computer - you
- 
+    # The below logic is written on the basis of the value of computer - you
     '''
+    
     if((computer - you) == -1 or  (computer - you) == 2 ):
         print("You lose!")
     else:
-        print("You win!") 
+        print("You win!")

@@ -1,9 +1,11 @@
-# Age verfication program
-# ---------------------------
+# ---------------------------------------------------------------- //-- IF ELSE --//
+
+# --------------------------- Age verfication program
+
 age = int(input("Enter your Age : "))
 
 if (age%2 == 0):
-    print("Number is even")
+    print("Number is even") 
 
 if (age >= 18):
     print("Whatever")
@@ -15,9 +17,9 @@ else:
     print("Yea Whatever, don't care")
 
 
-#Check for total percentage
-# ---------------------------
-marks1= int(input("Enter Marks 1: "))
+# --------------------------- Check for Total Percentage
+
+marks1 = int(input("Enter Marks 1: "))
 marks2 = int(input("Enter Marks 2: "))
 marks3 = int(input("Enter Marks 3: "))
 
@@ -27,11 +29,11 @@ if (total_percentage>=40 and marks1>=33 and marks2>=33 and marks3>=33):
     print("You are passed:", total_percentage)
 
 else:
-    print("You failed, your percentage:", total_percentage)
+    print("Better luck next time, bru, your percentage:", total_percentage)
 
 
-# whether a given username contains less than 10 characters or not
-# ---------------------------
+# --------------------------- Whether a given username contains less than 10 characters or not
+ 
 username = input("Enter Username: ")
 
 if (len(username)>10):
@@ -41,8 +43,8 @@ else:
     print("nope")
 
 
-# whether a given name is present in a list or not
-# ---------------------------
+# --------------------------- Whether a given name is present in a list or not
+
 l = ["Harry", "Shubh", "Vivaan"]
 
 name = input("Enter you name to check: ")
@@ -54,8 +56,8 @@ else:
     print("nope")
 
 
-# calculate the grade of a student from his marks
-# ---------------------------
+# --------------------------- Calculate the grade of a student from his marks
+
 marks = int(input("Enter your Marks: "))
 
 if (marks<=100 and marks>90):
@@ -74,4 +76,4 @@ elif (marks<=60 and marks>50):
     print("You got D Grade")
 
 else:
-    print("You Failed")
+    print("You got a F")
