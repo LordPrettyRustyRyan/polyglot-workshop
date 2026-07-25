@@ -1,12 +1,9 @@
-# Uce - a Chatbot
+This Chatbot is a fun, API-driven AI assistant, which runs on both CLI (terminal) and Web (Flask + HTML/CSS/JS) without changing the chatbot logic.
 
-Uce is a fun, terminal-based AI assistant with a laid-back vibe, inspired by WWE's Bloodline (Jey & Jimmy Uso, Roman Reigns).
-It’s **chill, comedic, and confident** — It delivers short, casual responses with slang like "Ayo" and "Yeet."
-
-Built to work in both CLI (terminal) and Web (Flask + HTML/CSS/JS) without changing the chatbot logic.
+It got a laid-back vibe, inspired by WWE's Bloodline (Jey & Jimmy Uso, Roman Reigns).
 
 ## Features:
-- Fun, casual “uce” energy (Jey & Jimmy Uso / Roman Reigns slang)
+- Fun, casual “uce” energy (Jey & Jimmy Uso / Semi Zayn slang)
 - Context-aware conversations — remembers chat history
 - Quick, short, on-point answers — no fluff
 - Handles casual exits like “seeya”, “ight later bruv”, etc.
@@ -23,14 +20,6 @@ Built to work in both CLI (terminal) and Web (Flask + HTML/CSS/JS) without chang
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Chat Completions API](https://img.shields.io/badge/Chat_Completions_API-412991?style=for-the-badge&logo=openai&logoColor=white)
-
----
-
-## Future Improvements
-- Chat history persistence
-- User sessions
-- Dark / light theme toggle
 
 ---
 
@@ -56,5 +45,5 @@ Built to work in both CLI (terminal) and Web (Flask + HTML/CSS/JS) without chang
 5. Run Web Version (Flask UI):
     ```
     python app.py
-It runs on http://127.0.0.1:5000
-Chat away!
+
+---
