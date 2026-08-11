@@ -1,0 +1,177 @@
+export const AppIcons = {
+  AppStore: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      xmlSpace="preserve"
+      {...props}
+    >
+      <path
+        d="M4 4h10v10H4zm0 14h10v10H4zM18 4h10v10H18zm5 15v8m-4-4h8"
+        style={{
+          fill: "none",
+          stroke: "#fff",
+          strokeWidth: 2,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeMiterlimit: 10,
+        }}
+      />
+    </svg>
+  )
+  ,
+  Music: (props: React.SVGProps<SVGSVGElement>) => (<svg
+    width={800}
+    height={800}
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g fill="#fff">
+      <circle cx={19} cy={33} r={9} />
+      <path d="M24 6v27h4V14l11 3v-7z" />
+    </g>
+  </svg>)
+  ,  
+Video: (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="white"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <rect
+      x="2"
+      y="6"
+      width="15"
+      height="12"
+      rx="2"
+    />
+    <path d="M17 10l5-3v10l-5-3z" />
+  </svg>
+),
+  Notepad: (props: React.SVGProps<SVGSVGElement>) => (<svg
+    width={800}
+    height={800}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      clipRule="evenodd"
+      d="M7.8 2.25h-.032c-.813 0-1.469 0-2 .043-.546.045-1.026.14-1.47.366a3.75 3.75 0 0 0-1.64 1.639c-.226.444-.32.924-.365 1.47-.043.531-.043 1.187-.043 2v8.464c0 .813 0 1.469.043 2 .045.546.14 1.026.366 1.47a3.75 3.75 0 0 0 1.639 1.64c.444.226.924.32 1.47.365.531.043 1.187.043 2 .043h3.506c.593 0 1.003 0 1.401-.087q.53-.116 1.006-.378c.357-.196.666-.467 1.112-.857l.058-.051 5.004-4.378.07-.062c.536-.468.906-.792 1.178-1.192.24-.353.417-.745.525-1.158.122-.468.122-.96.122-1.671V7.768c0-.813 0-1.469-.043-2-.045-.546-.14-1.026-.366-1.47a3.75 3.75 0 0 0-1.639-1.64c-.444-.226-.924-.32-1.47-.365-.531-.043-1.187-.043-2-.043H16.2zM4.979 3.995c.197-.1.458-.17.912-.207.462-.037 1.057-.038 1.909-.038h8.4c.853 0 1.447 0 1.91.038.453.037.714.107.911.207.424.216.768.56.984.984.1.197.17.458.207.912.037.462.038 1.057.038 1.909v4.022c0 .84-.006 1.128-.073 1.386q-.007.03-.017.06a1 1 0 0 0-.16-.018h-2.232c-.813 0-1.469 0-2 .043-.546.045-1.026.14-1.47.366a3.75 3.75 0 0 0-1.64 1.638c-.226.445-.32.925-.365 1.471-.043.531-.043 1.187-.043 2v1.449c-.2.03-.462.033-1.054.033H7.8c-.852 0-1.447 0-1.91-.038-.453-.037-.714-.107-.911-.207a2.25 2.25 0 0 1-.984-.983c-.1-.198-.17-.459-.207-.913-.037-.462-.038-1.057-.038-1.909V7.8c0-.852 0-1.447.038-1.91.037-.453.107-.714.207-.911a2.25 2.25 0 0 1 .984-.984m8.771 15.352q.054-.046.113-.1l5.004-4.377.137-.12H17.8c-.852 0-1.447 0-1.91.038-.453.038-.714.107-.911.207a2.25 2.25 0 0 0-.984.984c-.1.197-.17.458-.207.912-.037.462-.038 1.057-.038 1.909z"
+      fill="#fff"
+      fillRule="evenodd"
+    />
+  </svg>)
+  ,
+  Terminal: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      width={800}
+      height={800}
+      viewBox="-4 -5 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMinYMin"
+      className="jam jam-terminal"
+      {...props}
+    >
+      <path
+        d="m5.243 7.071-4.95-4.95A1 1 0 1 1 1.707.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414zM6.929 12h8a1 1 0 0 1 0 2h-8a1 1 0 0 1 0-2"
+        fill="#fff"
+      />
+    </svg>
+  ),
+  Browser: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      width={800}
+      height={800}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <circle
+        cx={12}
+        cy={12}
+        r={8}
+        stroke="#fff"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.399 4.849C5.372 2.582 2.972 1.489 2.23 2.23c-1.174 1.174 2.248 6.5 7.643 11.895 5.396 5.395 10.722 8.817 11.895 7.643.431-.43.243-1.421-.435-2.769"
+        stroke="#fff"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+  Finder: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      width={800}
+      height={800}
+      viewBox="-2 -4 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMinYMin"
+      className="jam jam-folder"
+      {...props}
+    >
+      <path
+        d="M17 4H9.415l-.471-1.334A1 1 0 0 0 8 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-6.17-2H17a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h5c1.306 0 2.417.835 2.83 2"
+        fill="#fff"
+      />
+    </svg>
+  ),
+  Trash: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      width={800}
+      height={800}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2M10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Z"
+        fill="#fff"
+      />
+    </svg>
+  ),
+  Settings: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#fff"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M12.22 2h-.44a2 2 0 00-2 2v.18a2 2 0 01-1 1.73l-.43.25a2 2 0 01-2 0l-.15-.08a2 2 0 00-2.73.73l-.22.38a2 2 0 00.73 2.73l.15.1a2 2 0 011 1.72v.51a2 2 0 01-1 1.74l-.15.09a2 2 0 00-.73 2.73l.22.38a2 2 0 002.73.73l.15-.08a2 2 0 012 0l.43.25a2 2 0 011 1.73V20a2 2 0 002 2h.44a2 2 0 002-2v-.18a2 2 0 011-1.73l.43-.25a2 2 0 012 0l.15.08a2 2 0 002.73-.73l.22-.39a2 2 0 00-.73-2.73l-.15-.08a2 2 0 01-1-1.74v-.5a2 2 0 011-1.74l.15-.09a2 2 0 00.73-2.73l-.22-.38a2 2 0 00-2.73-.73l-.15.08a2 2 0 01-2 0l-.43-.25a2 2 0 01-1-1.73V4a2 2 0 00-2-2z" />
+      <circle cx={12} cy={12} r={3} />
+    </svg>
+  ),
+  Photopea: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={363.818}
+      height={363.818}
+      viewBox="0 0 363.818 363.818"
+      xmlSpace="preserve"
+      {...props}
+    >
+      <path
+        d="M358.872.841a8.5 8.5 0 0 0-9.572 1.526c-19.515 18.728-53.141 46.415-102.511 71.961a8.5 8.5 0 0 0-4.333 5.463c-4.028 15.908-11.933 33.271-23.492 51.607l-4.705 7.462 8.772-38.205a8.5 8.5 0 0 0-2.828-8.42 8.5 8.5 0 0 0-8.786-1.303l-1.015.428C110.79 133.291 81.352 198.24 72.67 233.22c-3.013 12.141-4.516 24.163-4.465 35.738.02 4.466.272 8.722.75 12.705l-66.39 67.703A8.5 8.5 0 0 0 14.3 361.653l182.428-163.851c.896.059-103.874 109.806-102.925 109.806 14.22 0 33.863-6.555 56.804-18.95 30.935-16.717 65.508-42.37 99.979-74.185a8.5 8.5 0 0 0-7.667-14.528l-21.363 4.904 7.465-4.706c20.835-13.136 40.313-21.511 57.891-24.897a8.5 8.5 0 0 0 4.875-2.849c41.348-48.75 58.853-96.919 66.256-128.743 2.69-11.567 4.579-23.134 5.607-34.38a8.5 8.5 0 0 0-4.778-8.433"
+        fill="#fff"
+      />
+    </svg>
+  )
+}
