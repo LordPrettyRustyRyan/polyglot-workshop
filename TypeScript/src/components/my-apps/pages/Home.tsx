@@ -5,20 +5,20 @@ import {
 } from 'react-icons/fa';
 
 const socialLinks = [
-    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/yourusername' },
-    { name: 'LinkedIn', icon: <FaLinkedin />, url: 'https://linkedin.com/in/yourusername' },
-    { name: 'Medium', icon: <FaMedium />, url: 'https://medium.com/@yourusername' },
-    { name: 'LeetCode', icon: <FaCode />, url: 'https://leetcode.com/u/yourusername' },
-    { name: 'Instagram', icon: <FaInstagram />, url: 'https://instagram.com/yourusername' },
-    { name: 'Email', icon: <FaEnvelope />, url: 'mailto:your.email@example.com' },
-    { name: 'Youtube', icon: <FaYoutube />, url: 'https://youtube.com/@yourchannel' },
+    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/LordPrettyRustyRyan' },
+    { name: 'LinkedIn', icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/sidharath-51a4b13a2/' },
+    // { name: 'Medium', icon: <FaMedium />, url: 'https://medium.com/@yourusername' },
+    // { name: 'LeetCode', icon: <FaCode />, url: 'https://leetcode.com/u/yourusername' },
+    { name: 'Email', icon: <FaEnvelope />, url: 'mailto:sid.ghai470@gmail.com' },
+    { name: 'Instagram', icon: <FaInstagram />, url: 'https://instagram.com/lord.imagine' },
+    { name: 'Youtube', icon: <FaYoutube />, url: 'https://youtube.com/@LordImagine' },
 ];
 
 const brandColors: Record<string, string> = {
     GitHub: '#ffffff',
     LinkedIn: '#0077b5',
-    Medium: '#000000',
-    LeetCode: '#ffa116',
+    // Medium: '#000000',
+    // LeetCode: '#ffa116',
     Instagram: '#e1306c',
     Email: '#ea4335',
     Youtube: '#ff0000',
@@ -28,13 +28,11 @@ const Home: React.FC = () => {
     return (
         <div className="bg-[#111111] text-white min-h-screen p-14 font-sans">
             <header>
-                <p className="text-[#4ade80] font-mono text-[1.1rem]">// hello !! Welcome to my portfolio</p>
-                <h1 className="font-stretchpro text-[5rem] leading-none font-black mt-4">
-                    Sidharth<br />
-                </h1>
-                <h2 className="font-disassembler text-[#ec4899] text-[3rem] mb-2"><span className='text-[2rem]'>aka </span>Lord Pretty Rusty Ryan</h2>
+                <p className="text-[#4ade80] font-mono text-[1rem]">// hello !! Welcome to my portfolio</p>
+                <h1 className="font-stretchpro text-[4rem] leading-none font-black mt-4"> Sidharth <br/> </h1>
+                <h2 className="font-disassembler text-[#ec4899] text-[2.4rem] mb-3"><span className='text-[1.6rem]'>aka </span>Lord Pretty Rusty Ryan</h2>
 
-                <div className="h-1 w-[47rem] bg-gradient-to-r from-pink-500 to-transparent mb-4" />
+                <div className="h-1 w-[47rem] bg-gradient-to-r from-pink-500 to-transparent mb-6" />
 
                 <div className="flex gap-3 mb-8">
                     {[
@@ -54,13 +52,13 @@ const Home: React.FC = () => {
                     </span>
                 </div>
 
-                <p className="font-mono bio max-w-2xl text-lg mb-10">
+                <p className="font-mono bio max-w-2xl text-base mb-8">
                     I live at the crossroads of <span className="text-[#22d3ee]">full-stack engineering</span>, <span className="text-[#22d3ee]">cross-platform applications</span>
                     , and <span className="text-[#22d3ee]">product design</span>. I build software that <span className="text-[#22d3ee]">solves real problems</span>.
                 </p>
             </header>
 
-            <div className="flex gap-4 mb-12">
+            <div className="flex gap-4 mb-10">
                 <button className="bg-[#2563eb] flex items-center gap-2 text-white px-6 py-2 cursor-pointer transition-all duration-300 hover:bg-[#1d4ed8] hover:scale-105 active:scale-95"><FaFolder size={12} />Projects</button>
                 <button className="bg-transparent border border-[#d3d0d0] text-white px-6 py-2 cursor-pointer transition-all duration-300 hover:bg-white hover:text-[#0f172a] hover:scale-105 active:scale-95">About Me</button>
                 <button className="bg-transparent border border-[#d3d0d0] text-white px-6 py-2 cursor-pointer transition-all duration-300 hover:bg-white hover:text-[#0f172a] hover:scale-105 active:scale-95">Contact</button>

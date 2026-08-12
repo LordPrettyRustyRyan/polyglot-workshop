@@ -95,8 +95,8 @@ const lineVariants: Variants = {
 const Projects: React.FC = () => {
   return (
     <div className="bg-[#111111] text-white min-h-screen p-8 md:p-14 font-sans">
-      <p className="font-mono text-[1.1rem] text-[#4ade80] mb-2">// projects.js : things I've built & deployed</p>
-      <h1 className="font-stretchpro text-[3.5rem] mb-2">Projects</h1>
+      <p className="font-mono text-[1rem] text-[#4ade80] mb-2">// projects.js : things I've built & deployed</p>
+      <h1 className="font-stretchpro text-[3rem] mb-2">Projects</h1>
       <p className="font-mono text-gray-500 mb-8">const projects = [ ...shipped, ...building ]</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -136,7 +136,7 @@ const Projects: React.FC = () => {
                 </div>
               </div>
 
-              <h3 className="font-stretchpro text-xl mb-3 group-hover:text-white transition-colors">{p.title}</h3>
+              <h3 className="font-stretchpro text-lg mb-3 group-hover:text-white transition-colors">{p.title}</h3>
               <p className="font-mono text-gray-400 text-sm mb-6 leading-relaxed">{p.desc}</p>
             </div>
 
