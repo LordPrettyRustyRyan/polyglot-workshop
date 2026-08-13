@@ -60,19 +60,19 @@ const projects = [
     // liveUrl: '#'
   },
   {
-    title: 'Sonic — Arcade on Web',
-    tags: ['WEB', 'ARCADE', 'GAME'],
-    desc: 'Sonic: Blue Devil is an infinite runner built with JavaScript and the Kaplay game library. Features fast-paced gameplay, custom controls, and persistent high scores.',
+    title: "Odyssey — Imagine's Travels",
+    tags: ['WEB', '2D', 'GAME', 'KAPLAY'],
+    desc: 'Odyssey is an infinite runner built with JavaScript and the Kaplay game library. Features fast-paced gameplay, custom controls, and persistent high scores.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Kaplay'],
     color: '#ff2424',
     repoUrl: 'https://github.com/LordPrettyRustyRyan/Sonic',
     // liveUrl: '#'
   },
   {
-    title: 'Horizon Drive — Arcade on Web',
-    tags: ['WEB', 'ARCADE', 'GAME'],
+    title: 'Horizon Drive — Ride Out',
+    tags: ['WEB', '3D', 'RACING', 'GAME'],
     desc: 'A retro-inspired arcade racing game where you dodge traffic, speed through winding roads, and race against the clock. With pixel-style graphics, nostalgic sound effects, and fast-paced gameplay.',
-    tech: ['HTML5', 'Canvas', 'CSS3', 'JavaScript'],
+    tech: ['HTML5', 'CSS3', 'JavaScript'],
     color: '#24ffed',
     repoUrl: 'https://github.com/LordPrettyRustyRyan/HorizonDrive',
     // liveUrl: '#'
