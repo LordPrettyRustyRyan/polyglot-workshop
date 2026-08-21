@@ -1,0 +1,673 @@
+/* =========================================================
+   BASE
+========================================================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   APP ROOT
+========================================================= */
+
+.video-app-root {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   OUTER APPLICATION WINDOW
+========================================================= */
+
+.video-window {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #000;
+
+  border: 2px solid #777;
+
+  box-shadow:
+    inset 1px 1px #fff,
+    inset -1px -1px #888;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.video-toolbar {
+  position: relative;
+
+  flex: 0 0 40px;
+
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 5px;
+
+  background: rgba(39, 39, 42, 0.96);
+
+  border-bottom: 1px solid #555;
+
+  z-index: 20;
+}
+
+
+/* =========================================================
+   TOOLBAR SECTIONS
+========================================================= */
+
+.toolbar-left,
+.toolbar-right {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 2px;
+}
+
+.toolbar-center {
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================================================
+   TOOLBAR BUTTONS
+========================================================= */
+
+.toolbar-button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #d4d4d8;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.toolbar-button:hover {
+  background: #3f3f46;
+  color: white;
+}
+
+.toolbar-button-active {
+  background: rgba(59, 130, 246, 0.18);
+  color: #60a5fa;
+}
+
+.toolbar-button-open {
+  background: #3f3f46;
+  color: white;
+}
+
+
+/* =========================================================
+   TAB SWITCHER
+========================================================= */
+
+.tab-switcher {
+  display: flex;
+  align-items: center;
+
+  padding: 2px;
+
+  background: #18181b;
+
+  border-radius: 10px;
+}
+
+.tab-button {
+  height: 28px;
+
+  padding: 0 17px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #a1a1aa;
+
+  font-size: 14px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.tab-button:hover {
+  color: white;
+}
+
+.tab-button-active {
+  background: #3f3f46;
+  color: white;
+
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   VOLUME
+========================================================= */
+
+.volume-control {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.volume-popup {
+  position: absolute;
+
+  left: 34px;
+  top: 50%;
+
+  width: 0;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  transform: translateY(-50%);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    width 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.volume-popup-visible {
+  width: 120px;
+
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+.volume-slider {
+  width: 110px;
+  height: 4px;
+
+  margin: 0 5px;
+
+  appearance: none;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+
+  width: 12px;
+  height: 12px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+
+  transition: transform 0.15s ease;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.volume-slider::-moz-range-track {
+  height: 4px;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   HELP MENU
+========================================================= */
+
+.help-control {
+  position: relative;
+}
+
+.help-menu {
+  position: absolute;
+
+  right: 0;
+  top: 37px;
+
+  width: 260px;
+
+  padding: 12px;
+
+  border: 1px solid #52525b;
+  border-radius: 9px;
+
+  background: #18181b;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5);
+
+  z-index: 100;
+}
+
+.help-title {
+  margin-bottom: 8px;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.help-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  color: #a1a1aa;
+
+  font-size: 13px;
+}
+
+.help-content div {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.help-content span {
+  width: 20px;
+
+  color: #e4e4e7;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.video-content {
+  position: relative;
+
+  flex: 1 1 auto;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  overflow: hidden;
+
+  background: #000;
+}
+
+
+/* =========================================================
+   PLAYER STAGE
+========================================================= */
+
+.player-stage {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #000;
+}
+
+
+/* =========================================================
+   4:3 VIDEO
+========================================================= */
+
+/*
+   IMPORTANT:
+
+   The stage controls the available space.
+   The video uses object-fit: contain.
+
+   Since every source video is 4:3:
+   - video remains 4:3
+   - video never stretches
+   - video never crops
+   - unused space becomes black
+*/
+
+.player-video {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  object-fit: contain;
+
+  background: #000;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* Hide browser video controls */
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+
+/* =========================================================
+   VIDEO LIST
+========================================================= */
+
+.video-list {
+  width: 100%;
+  height: 100%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: clamp(12px, 2vw, 24px);
+
+  background: #111;
+}
+
+
+/* =========================================================
+   VIDEO GRID
+========================================================= */
+
+.video-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        min(100%, 260px),
+        1fr
+      )
+    );
+
+  gap: clamp(12px, 1.5vw, 20px);
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   VIDEO CARD
+========================================================= */
+
+.video-card {
+  position: relative;
+
+  width: 100%;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #18181b;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.015);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.video-card-selected {
+  outline: 2px solid #3b82f6;
+  outline-offset: 0;
+}
+
+
+/* =========================================================
+   VIDEO THUMBNAIL
+========================================================= */
+
+.video-thumbnail {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+
+  background: #000;
+}
+
+.video-thumbnail img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================================
+   THUMBNAIL OVERLAY
+========================================================= */
+
+.video-thumbnail-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.58);
+
+  opacity: 0;
+
+  transition: opacity 0.18s ease;
+}
+
+.video-card:hover .video-thumbnail-overlay {
+  opacity: 1;
+}
+
+.video-thumbnail-overlay span {
+  color: white;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FULLSCREEN
+========================================================= */
+
+.video-window:fullscreen {
+  width: 100vw;
+  height: 100vh;
+
+  border: 0;
+
+  box-shadow: none;
+}
+
+.video-window:fullscreen .video-toolbar {
+  flex-basis: 40px;
+}
+
+
+/* =========================================================
+   RESPONSIVE TOOLBAR
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .video-toolbar {
+    height: 38px;
+    flex-basis: 38px;
+
+    padding: 0 3px;
+  }
+
+  .toolbar-button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tab-button {
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .help-menu {
+    width: 230px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .tab-button {
+    padding: 0 9px;
+  }
+
+  .video-list {
+    padding: 10px;
+  }
+
+}
