@@ -31,7 +31,7 @@ The project focuses on creating a clean, custom video playback experience direct
 
 ```bash
 git clone https://github.com/LordPrettyRustyRyan/video-player.git
-cd video-player
+cd polyglot-workshop/TypeScript/video-player
 npm install
 npm run dev
 ```
