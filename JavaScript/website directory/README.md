@@ -29,7 +29,7 @@ A clean, categorized interface designed for organizing, logging, and reviewing e
 ## How To Run
 
 ```bash
-git clone https://github.com/LordPrettyRustyRyan/website-directory.git
-cd website-directory
+git clone https://github.com/LordPrettyRustyRyan/polyglot-workshop.git
+cd polyglot-workshop/JavaScript/website-directory
 npm install
 npm run dev
