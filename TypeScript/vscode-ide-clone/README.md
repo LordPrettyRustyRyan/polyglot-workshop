@@ -22,7 +22,7 @@ A frontend recreation of the Visual Studio Code interface built. The project foc
 ## How To Run
 
 ```bash
-git clone https://github.com/LordPrettyRustyRyan/vscode-ide-clone.git
-cd vscode-ide-clone
+git clone https://github.com/LordPrettyRustyRyan/polyglot-workshop.git
+cd polyglot-workshop/TypeScript/vscode-ide-clone
 npm install
 npm run dev
