@@ -28,8 +28,8 @@ A web-based interactive terminal interface, featuring custom commands related to
 ## How To Run
 
 ```bash
-git clone https://github.com/LordPrettyRustyRyan/terminal.git
-cd web-terminal
+git clone https://github.com/LordPrettyRustyRyan/polyglot-workshop.git
+cd polyglot-workshop/TypeScript/terminal
 npm install
 npm run dev
 ```
