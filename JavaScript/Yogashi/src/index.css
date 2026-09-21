@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-yoga-olive-light: #606c38;
   --color-yoga-olive-dark: #283618;
-  --color-yoga-cream: #fefae0;
+  --color-yoga-olive-light: #606c38;
+  --color-yoga-sea-green: #1a936f;
+  --color-yoga-tropical-teal: #38a3a5;
+  --color-yoga-mint-leaf: #57cc99;
+  --color-yoga-frosted-mint: #dbf0de;
   --color-yoga-ochre: #dda15e;
   --color-yoga-terracotta: #bc6c25;
+}
+
+h1{
+  -olive-dark: #283618;
+  -olive-light: #606c38;
+-mint-leaf: #57cc99;
+-frosted-mint: #dbf0de;
+-ochre: #dda15e;
+-terracotta: #bc6c25;
+-tropical-teal: #38a3a5;
+-sea-green: #1a936f;
+}
+
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
