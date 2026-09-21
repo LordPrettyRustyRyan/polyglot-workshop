@@ -13,7 +13,7 @@ export default function Hero() {
               Yoga Studio
             </h1>
             <p className="mx-auto mt-5 max-w-md text-sm font-light leading-relaxed text-yoga-olive-dark/80 sm:mt-6 sm:text-base md:text-lg lg:mx-0">
-              i started my own studio, cause everywhere else you'll find assholes for colleague (they're as bad as trainers), so if y'all want a trainer who's not a bitch :
+              i started my own studio, cause everywhere else you'll find assholes for colleagues (they're as bad as trainers), so if y'all want a trainer who's not a bitch :
             </p>
             <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:mt-6 sm:flex-row sm:gap-4 lg:justify-start">
               <a href="#contact" className="w-full rounded-full bg-yoga-olive-dark px-8 py-3.5 text-center font-medium text-yoga-frosted-mint shadow-md transition-all hover:bg-yoga-olive-light sm:w-auto">
