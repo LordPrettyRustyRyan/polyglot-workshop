@@ -1,5 +1,6 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import Navbar from "../Components/ui/navbar";
+import Footer from "../Components/ui/footer";
 
 export default function Contact() {
   return (
@@ -232,6 +233,7 @@ export default function Contact() {
 
         </div>
       </section>
+      <Footer />
     </>
   );
 }
