@@ -6,6 +6,8 @@ import VideoSection from "../Components/ui/video-section";
 import FeaturedReview from "../Components/ui/featured-review";
 import Footer from "../Components/ui/footer";
 import Instructors from "../Components/ui/instructors";
+import Certifications from "../Components/ui/certifications";
+import StudioInfo from "../Components/ui/studio-info";
 
 function Home() {
   return (
@@ -18,11 +20,12 @@ function Home() {
         videoSrc="/home-video.mp4"
         posterSrc="/home-video-poster.png"
       />
-
-      <Instructors/>
-      <FeaturedReview backgroundColor="bg-yoga-tropical-teal" />
+      <StudioInfo variant="home" />
       <PopularClasses />
-      <Footer/>
+      <FeaturedReview backgroundColor="bg-yoga-tropical-teal" />
+      <Certifications />
+      <Instructors />
+      <Footer />
     </>
   );
 }

@@ -31,7 +31,7 @@ export default function Instructors() {
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl text-yoga-olive-dark font-normal tracking-wide">
-            Yoga Instructors
+            Our Instructors
           </h2>
         </div>
 
