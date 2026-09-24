@@ -1,8 +1,8 @@
 import Footer from "../Components/ui/footer";
 import Navbar from "../Components/ui/navbar";
-import PopularClasses from "../Components/ui/popularclasses";
-import VideoSection from "../Components/ui/videosection";
-import YogaStyles from "../Components/ui/yogastyles";
+import PopularClasses from "../Components/ui/popular-classes";
+import VideoSection from "../Components/ui/video-section";
+import YogaStyles from "../Components/ui/yoga-styles";
 
 export default function Classes() {
     return (
