@@ -165,7 +165,7 @@ export default function Contact() {
         </div>
 
         {/* ==================== LOCATION MAP ==================== */}
-        <div className="relative mt-16 h-[550px] w-full overflow-hidden sm:mt-20 lg:mt-24">
+        <div className="relative mt-16 h-137.5 w-full overflow-hidden sm:mt-20 lg:mt-24">
 
           {/* ==================== GOOGLE MAP ==================== */}
           <iframe
@@ -184,14 +184,14 @@ export default function Contact() {
               right-6
               top-1/2
               z-10
-              w-[263px]
+              w-65.75
               -translate-y-1/2
               bg-[url('/map-bg.png')]
               bg-cover
               bg-center
               p-3
               sm:right-10
-              lg:right-[190px]
+              lg:right-47.5
             "
           >
 
@@ -199,7 +199,7 @@ export default function Contact() {
             <div
               className="
                 flex
-                min-h-[256px]
+                min-h-64
                 w-full
                 flex-col
                 items-center
@@ -219,11 +219,11 @@ export default function Contact() {
               </span>
 
               <ul className="mt-2 space-y-1">
-                <li className="text-base font-bold leading-[30px] tracking-[0.2px]">
+                <li className="text-base font-bold leading-7.5 tracking-[0.2px]">
                   +91 00000 00000
                 </li>
 
-                <li className="text-base font-bold leading-[30px] tracking-[0.2px]">
+                <li className="text-base font-bold leading-7.5 tracking-[0.2px]">
                   it's me bruv @gmail.com
                 </li>
               </ul>

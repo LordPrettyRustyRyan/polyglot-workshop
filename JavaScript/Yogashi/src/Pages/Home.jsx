@@ -20,11 +20,8 @@ function Home() {
       />
 
       <Instructors/>
-
       <FeaturedReview backgroundColor="bg-yoga-tropical-teal" />
-
       <PopularClasses />
-
       <Footer/>
     </>
   );

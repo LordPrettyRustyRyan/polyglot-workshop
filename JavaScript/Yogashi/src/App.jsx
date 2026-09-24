@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
 import Testimonials from "./Pages/Testimonials";
 import Classes from "./Pages/Classes";
+import Contact from "./Pages/contact";
 
 function App() {
   return (

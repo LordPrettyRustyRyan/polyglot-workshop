@@ -62,7 +62,7 @@ const Footer = () => {
                                     type="email"
                                     placeholder="Enter your email"
                                     required
-                                    className="bg-gray-800 text-white px-4 py-2.5 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 flex-grow border border-gray-700"
+                                    className="bg-gray-800 text-white px-4 py-2.5 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 grow border border-gray-700"
                                 />
                                 <button
                                     type="submit"

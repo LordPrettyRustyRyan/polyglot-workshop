@@ -8,7 +8,7 @@ export default function FeaturedReview({
             <div className="grid grid-cols-1 lg:grid-cols-2">
 
                 {/* ==================== FEATURED IMAGE ==================== */}
-                <div className="relative min-h-[420px] overflow-hidden md:min-h-[500px] lg:min-h-[600px]">
+                <div className="relative min-h-105 overflow-hidden md:min-h-125 lg:min-h-150">
                     <img
                         src="/testimonial-featured.jpg"
                         alt="Featured yoga testimonial"

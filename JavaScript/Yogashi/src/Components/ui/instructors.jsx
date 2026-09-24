@@ -41,7 +41,7 @@ export default function Instructors() {
             <div key={index} className="flex flex-col group">
               
               {/* Instructor Image Card with Hover Scaling */}
-              <div className="overflow-hidden rounded-md shadow-md mb-6 aspect-[3/4] bg-yoga-frosted-mint relative">
+              <div className="overflow-hidden rounded-md shadow-md mb-6 aspect-3/4 bg-yoga-frosted-mint relative">
                 <img 
                   src={instructor.image} 
                   alt={instructor.name} 

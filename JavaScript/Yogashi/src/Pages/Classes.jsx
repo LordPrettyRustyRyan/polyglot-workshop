@@ -14,8 +14,8 @@ export default function Classes() {
                 <div className="relative bg-yoga-tropical-teal py-24 px-6 md:px-12 text-center overflow-hidden flex items-center justify-center">
                     {/* Subtle decorative background mandala outline effect */}
                     <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
-                        <div className="w-[600px] h-[600px] rounded-full border-2 border-yoga-olive-dark"></div>
-                        <div className="absolute w-[450px] h-[450px] rounded-full border border-yoga-olive-dark"></div>
+                        <div className="w-150 h-150 rounded-full border-2 border-yoga-olive-dark"></div>
+                        <div className="absolute w-112.5 h-112.5 rounded-full border border-yoga-olive-dark"></div>
                     </div>
 
                     {/* Main Title (leaving bottom padding so the overlapping image has space) */}
@@ -72,8 +72,8 @@ export default function Classes() {
                                             bg-white
                                             md:h-96
                                             md:w-96
-                                            lg:h-[26rem]
-                                            lg:w-[26rem]
+                                            lg:h-104
+                                            lg:w-104
                                         "
                                 />
 

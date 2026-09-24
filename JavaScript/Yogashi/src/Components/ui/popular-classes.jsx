@@ -52,7 +52,7 @@ export default function PopularClasses() {
             <div key={index} className="flex flex-col group">
               
               {/* Class Image Card */}
-              <div className="overflow-hidden rounded-lg shadow-md mb-5 aspect-[4/3] bg-yoga-frosted-mint">
+              <div className="overflow-hidden rounded-lg shadow-md mb-5 aspect-4/3 bg-yoga-frosted-mint">
                 <img 
                   src={item.image} 
                   alt={item.title} 
