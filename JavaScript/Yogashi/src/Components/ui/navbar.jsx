@@ -1,39 +1,51 @@
-import { useState } from 'react';
-import { HiMenu, HiX } from 'react-icons/hi';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Classes', href: '#classes' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "#about" },
+    { name: "Classes", href: "#classes" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
     <header className="bg-yoga-frosted-mint sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
+
           {/* Logo */}
           <div className="shrink-0">
-            <a href="#" className="text-[1.7rem] faculty-glyphic-regular text-yoga-olive-dark">
+            <a href="/" className="text-[1.7rem] faculty-glyphic-regular text-yoga-olive-dark">
               Yog<u>a</u>shi
             </a>
           </div>
 
-          {/* Desktop Navigation Links */}
+          {/* ==================== DESKTOP NAVIGATION LINKS ==================== */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name} href={link.href}
-                className="text-yoga-olive-dark hover:text-yoga-terracotta font-medium transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("/") ? (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-yoga-olive-dark hover:text-yoga-terracotta font-medium transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-yoga-olive-dark hover:text-yoga-terracotta font-medium transition-colors"
+                >
+                  {link.name}
+                </a>
+              )
+            )}
           </nav>
 
           {/* Desktop CTA Phone Button */}
@@ -58,7 +70,7 @@ export default function Navbar() {
       {/* Full-Screen Mobile & Tablet Overlay (sm and md screens) */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-yoga-olive-light flex flex-col justify-between px-4 py-1.5 lg:hidden animate-fadeIn">
-          
+
           {/* Overlay Top Bar: Logo & Close Button */}
           <div className="flex items-center justify-between">
             <a href="#" onClick={() => setIsOpen(false)} className="text-[1.7rem] faculty-glyphic-regular text-yoga-frosted-mint">
@@ -73,16 +85,29 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Centered Navigation Links */}
+          {/* ==================== MOBILE NAVIGATION LINKS ==================== */}
           <div className="flex flex-col items-center justify-center space-y-6 my-auto">
-            {navLinks.map((link) => (
-              <a
-                key={link.name} href={link.href} onClick={() => setIsOpen(false)}
-                className="text-3xl font-semibold text-yoga-frosted-mint hover:text-yoga-ochre transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("/") ? (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-3xl font-semibold text-yoga-frosted-mint hover:text-yoga-ochre transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-3xl font-semibold text-yoga-frosted-mint hover:text-yoga-ochre transition-colors"
+                >
+                  {link.name}
+                </a>
+              )
+            )}
           </div>
 
           {/* Overlay Bottom CTA Button */}
