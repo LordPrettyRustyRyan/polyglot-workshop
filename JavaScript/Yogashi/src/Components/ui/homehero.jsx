@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-yoga-frosted-mint text-yoga-olive-dark pt-10 sm:pt-12 lg:pt-14">
+    <section className="relative overflow-hidden bg-yoga-frosted-mint text-yoga-olive-dark py-10 sm:py-12 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex flex-col items-center lg:min-h-175 lg:flex-row lg:items-center lg:justify-center">
 
