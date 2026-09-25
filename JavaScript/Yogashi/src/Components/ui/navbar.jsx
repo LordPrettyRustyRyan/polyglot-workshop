@@ -67,11 +67,19 @@ export default function Navbar() {
       </div>
 
       {/* ==================== ANIMATED BOTTOM BORDER ==================== */}
-      <div
-        className={` absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-yoga-ochre transition-all duration-700 ease-out
-          ${isScrolled ? "w-[81%]" : "w-[25%]"}
-        `}
-      />
+      <div className="absolute bottom-0 left-0 h-0.5 w-full">
+        <div className={`absolute left-0 top-0 h-full bg-yoga-olive-dark transition-all duration-700 ease-out 
+          ${isScrolled ? "w-[9.5%]" : "w-[25%]"}
+        `} />
+
+        <div className={`absolute top-0 h-full -translate-x-1/2 bg-yoga-terracotta transition-all duration-700 ease-out 
+          ${isScrolled ? "left-1/2 w-[81%]" : "left-1/2 w-[25%]"}
+        `} />
+        
+        <div className={`absolute right-0 top-0 h-full bg-yoga-olive-dark transition-all duration-700 ease-out 
+          ${isScrolled ? "w-[9.5%]" : "w-[25%]"}
+        `} />
+      </div>
 
       {/* ==================== MOBILE / TABLET OVERLAY ==================== */}
       {isOpen && (
