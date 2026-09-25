@@ -48,7 +48,7 @@ export default function YogaStyles() {
 
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs sm:text-sm tracking-[0.2em] font-serif text-emerald-600 font-medium uppercase">
+          <span className="text-xs tracking-[0.4rem] text-emerald-600 font-medium uppercase">
             Yoga Styles
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl mt-4 font-normal tracking-tight font-serif text-yoga-olive-dark">

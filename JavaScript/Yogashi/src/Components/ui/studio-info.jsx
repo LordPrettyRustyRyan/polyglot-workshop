@@ -8,60 +8,54 @@ export default function StudioInfo({ variant = "about" }) {
 
             {/* ==================== HOME LAYOUT ==================== */}
             {isHome ? (
-                <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
+                <div className="mx-auto grid max-w-[92%] grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
 
                     {/* ==================== LEFT: STUDIO INFO ==================== */}
                     <div className="space-y-6 lg:col-span-6">
-
-                        {/* ==================== LABEL ==================== */}
-                        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2b6452]">
+                        <span className="text-xs tracking-[0.4rem] font-semibold uppercase text-[#2b6452]">
                             Our Studio
                         </span>
 
-                        {/* ==================== HEADING ==================== */}
-                        <h2 className="font-serif text-4xl leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-                            Yoga Studio in the City of New York
+                        <h2 className="font-serif mt-4 text-4xl leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+                            Awesome'st Yoga Studio in the City of Chandigarh
                         </h2>
 
-                        {/* ==================== LOCATION ==================== */}
                         <div className="flex items-start gap-2 pt-2 text-[#1a2e26]">
                             <FaMapMarkerAlt className="mt-1 h-5 w-5 shrink-0 text-[#2b6452]" />
-
-                            <span className="font-medium text-base sm:text-lg">
-                                123 5th Avenue, New York, NY 12004, USA.
+                            <span className="faculty-glyphic-400 font-medium text-base sm:text-lg">
+                                123 Cloud 9, Chandigarh, CHD 160020, IND.
                             </span>
                         </div>
 
-                        {/* ==================== MAP BUTTON ==================== */}
                         <div className="pt-2">
-                            <a
-                                href="#map"
-                                className="inline-flex items-center gap-2 rounded-full border border-[#2b6452] px-5 py-2.5 text-sm font-medium text-[#1a2e26] transition-colors hover:bg-[#2b6452] hover:text-white sm:px-6 sm:py-3"
-                            >
+                            <a href="#map" className="inline-flex items-center gap-2 rounded-full border border-[#2b6452] px-5 py-2.5 text-sm font-medium text-[#1a2e26] transition-colors hover:bg-[#2b6452] hover:text-white sm:px-6 sm:py-3">
                                 <span>Find Us On Map</span>
                                 <FaExternalLinkAlt className="h-3.5 w-3.5" />
                             </a>
                         </div>
-
                     </div>
 
 
                     {/* ==================== RIGHT: DESCRIPTION ==================== */}
                     <div className="space-y-6 pt-2 lg:col-span-6">
+                        <div className="mb-8 h-0.5 w-12 bg-yoga-terracotta" />
 
-                        {/* ==================== ACCENT LINE ==================== */}
-                        <div className="mb-8 h-0.5 w-12 bg-[#2b6452]" />
-
-                        {/* ==================== FIRST PARAGRAPH ==================== */}
                         <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-base">
-                            Commodo eu hendrerit facilisis viverra vulputate sed turpis odio natoque justo semper mauris enim lorem mattis risus imperdiet pretium, sed vel facilisi arcu, turpis pharetra, eu euismod amet, vestibulum scelerisque bibendum massa.
+                            Commodo eu hendrerit facilisis viverra vulputate sed turpis odio natoque justo 
+                            semper mauris enim lorem mattis risus imperdiet pretium, sed vel facilisi arcu, 
+                            turpis pharetra, eu euismod amet, vestibulum scelerisque bibendum massa.
+                            Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris
                         </p>
 
-                        {/* ==================== SECOND PARAGRAPH ==================== */}
                         <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-base">
-                            Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas interdum sed arcu donec risus vestibulum aliquet auctor quam.
+                            at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas
+                            felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna  
+                            interdum sed arcu donec risus vestibulum aliquet auctor quam.
+                            Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris 
+                            felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna 
+                            at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas 
+                            interdum sed arcu donec risus vestibulum aliquet auctor quam.
                         </p>
-
                     </div>
 
                 </div>

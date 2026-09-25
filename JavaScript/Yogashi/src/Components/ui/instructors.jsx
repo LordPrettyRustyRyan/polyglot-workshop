@@ -1,89 +1,95 @@
-import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function Instructors() {
   const instructorsData = [
     {
       name: "Ellen Sherman",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600",
-      socials: { facebook: "#", twitter: "#", youtube: "#" }
+      image: "/instructor-1.jpg",
+      socials: { facebook: "#", twitter: "#", youtube: "#" },
     },
     {
       name: "Christina Latham",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=600",
-      socials: { facebook: "#", twitter: "#", youtube: "#" }
+      image: "/instructor-2.jpg",
+      socials: { facebook: "#", twitter: "#", youtube: "#" },
     },
     {
-      name: "Luke Stryker",
-      image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=600",
-      socials: { facebook: "#", twitter: "#", youtube: "#" }
+      name: "Lucie Stryker",
+      image: "/instructor-3.jpg",
+      socials: { facebook: "#", twitter: "#", youtube: "#" },
     },
     {
       name: "Gloria Benner",
-      image: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&q=80&w=600",
-      socials: { facebook: "#", twitter: "#", youtube: "#" }
-    }
+      image: "/instructor-4.jpg",
+      socials: { facebook: "#", twitter: "#", youtube: "#" },
+    },
   ];
 
   return (
-    <div className="w-full bg-[#f4f7f4] py-20 px-6 md:px-12 font-sans overflow-x-hidden">
-      <div className="max-w-7xl mx-auto">
-        
-        {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-yoga-olive-dark font-normal tracking-wide">
+    <section className="w-full overflow-x-hidden bg-[#f4f7f4] px-6 py-20 font-sans md:px-12 md:py-24">
+      <div className="mx-auto max-w-[86%]">
+
+        {/* ==================== SECTION HEADING ==================== */}
+        <div className="mb-12 text-center lg:mb-16">
+          <span className="text-xs font-semibold uppercase tracking-[0.4rem] text-[#2b6452]">
+            Meet The Team
+          </span>
+
+          <h2 className="my-4 font-serif text-4xl font-normal tracking-tight text-yoga-olive-dark sm:text-5xl">
             Our Instructors
           </h2>
+
+          <p className="mx-auto max-w-xl text-sm leading-relaxed text-yoga-olive-dark/70 md:text-base">
+            Morbi lobortis morbi dignissim sodales eget mauris turpis
+            interdum sagittis sed cursus nunc nulla congue quis.
+          </p>
         </div>
 
-        {/* 4-Column Instructors Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* ==================== INSTRUCTORS GRID ==================== */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {instructorsData.map((instructor, index) => (
-            <div key={index} className="flex flex-col group">
-              
-              {/* Instructor Image Card with Hover Scaling */}
-              <div className="overflow-hidden rounded-md shadow-md mb-6 aspect-3/4 bg-yoga-frosted-mint relative">
-                <img 
-                  src={instructor.image} 
-                  alt={instructor.name} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+            <div key={index} className="group flex h-full flex-col bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-xl">
+
+              {/* ==================== INSTRUCTOR IMAGE ==================== */}
+              <div className="relative aspect-3/4 overflow-hidden bg-yoga-frosted-mint">
+                <img
+                  src={instructor.image} alt={instructor.name}
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
 
-              {/* Instructor Name */}
-              <h3 className="font-serif text-sm md:text-base tracking-widest text-yoga-olive-dark text-center font-medium mb-3">
-                {instructor.name}
-              </h3>
+              {/* ==================== INSTRUCTOR INFO ==================== */}
+              <div className="flex flex-1 flex-col items-center px-4 pb-6 pt-6">
+                <div className="mb-5 h-px w-8 bg-yoga-terracotta transition-all duration-500 group-hover:w-14" />
 
-              {/* Social Media Links with Hover Effects */}
-              <div className="flex items-center justify-center space-x-5 text-yoga-olive-dark/70">
-                <a 
-                  href={instructor.socials.facebook} 
-                  aria-label="Facebook"
-                  className="hover:text-yoga-terracotta hover:scale-110 transition-all duration-200"
-                >
-                  <FaFacebookF size={14} />
-                </a>
-                <a 
-                  href={instructor.socials.twitter} 
-                  aria-label="Twitter"
-                  className="hover:text-yoga-terracotta hover:scale-110 transition-all duration-200"
-                >
-                  <FaTwitter size={14} />
-                </a>
-                <a 
-                  href={instructor.socials.youtube} 
-                  aria-label="YouTube"
-                  className="hover:text-yoga-terracotta hover:scale-110 transition-all duration-200"
-                >
-                  <FaYoutube size={14} />
-                </a>
+                <h3 className="mb-4 text-center font-serif text-xl font-normal text-yoga-olive-dark transition-colors duration-300 group-hover:text-[#2b6452]">
+                  {instructor.name}
+                </h3>
+
+                <div className="mt-auto flex items-center justify-center gap-5 text-yoga-olive-dark/70">
+                  <a href={instructor.socials.facebook} aria-label={`${instructor.name} on Facebook`}
+                    className="transition-all duration-300 hover:scale-110 hover:text-yoga-terracotta"
+                  >
+                    <FaFacebookF size={14} />
+                  </a>
+
+                  <a href={instructor.socials.twitter} aria-label={`${instructor.name} on Twitter`}
+                    className="transition-all duration-300 hover:scale-110 hover:text-yoga-terracotta"
+                  >
+                    <FaTwitter size={14} />
+                  </a>
+
+                  <a href={instructor.socials.youtube} aria-label={`${instructor.name} on YouTube`}
+                    className="transition-all duration-300 hover:scale-110 hover:text-yoga-terracotta"
+                  >
+                    <FaYoutube size={14} />
+                  </a>
+                </div>
               </div>
-
             </div>
           ))}
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }

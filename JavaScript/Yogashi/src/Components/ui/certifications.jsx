@@ -2,7 +2,6 @@ export default function Certifications() {
     const logos = [
         {
             name: 'logoipsum 1',
-            // Placeholder SVG for logo 1
             icon: (
                 <svg className="w-8 h-8 text-slate-800" viewBox="0 0 24 24" fill="currentColor">
                     <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -12,7 +11,6 @@ export default function Certifications() {
         },
         {
             name: 'logoipsum 2',
-            // Placeholder SVG for logo 2
             icon: (
                 <svg className="w-8 h-8 text-slate-800" viewBox="0 0 24 24" fill="currentColor">
                     <rect x="3" y="3" width="8" height="18" rx="1" />
@@ -22,7 +20,6 @@ export default function Certifications() {
         },
         {
             name: 'logoipsum 3',
-            // Placeholder SVG for logo 3
             icon: (
                 <svg className="w-8 h-8 text-slate-800" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M3 3h8v8H3zM13 7h8M13 17h8" stroke="currentColor" strokeWidth="3" fill="none" />
@@ -31,7 +28,6 @@ export default function Certifications() {
         },
         {
             name: 'logoipsum 4',
-            // Placeholder SVG for logo 4
             icon: (
                 <svg className="w-8 h-8 text-slate-800" viewBox="0 0 24 24" fill="currentColor">
                     <circle cx="6" cy="6" r="3" />
@@ -44,14 +40,12 @@ export default function Certifications() {
 
     return (
         <section className="w-full bg-[#f2f7f4] py-10 px-6 md:px-16 border-y border-[#e2ece5]">
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div className="max-w-[86%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
 
-                {/* Section Title */}
-                <div className="tracking-[0.2em] text-sm font-semibold text-[#2d7a60] uppercase whitespace-nowrap">
-                    Our Certification[cite: 1]
+                <div className="tracking-[0.4em] text-sm font-semibold text-[#2d7a60] uppercase whitespace-nowrap">
+                    Our Certification
                 </div>
 
-                {/* Logos Grid / Flex */}
                 <div className="flex flex-wrap items-center justify-center lg:justify-end gap-8 md:gap-16 w-full opacity-80">
                     {logos.map((logo, index) => (
                         <div key={index} className="flex items-center gap-3 grayscale hover:grayscale-0 transition-all duration-300">

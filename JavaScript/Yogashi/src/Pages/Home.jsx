@@ -122,7 +122,7 @@ function Home() {
 
       <PopularClasses />
 
-      <FeaturedReview backgroundColor="bg-yoga-tropical-teal" />
+      <FeaturedReview backgroundColor="bg-dog" showButton/>
 
       <Certifications />
 
