@@ -6,16 +6,16 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <section id="contact" className="relative overflow-hidden bg-yoga-frosted-mint text-yoga-olive-dark py-16 sm:py-20 lg:py-24">
+      <section className="relative overflow-hidden bg-yoga-frosted-mint text-yoga-olive-dark py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
             {/* LEFT COLUMN: Heading, Info, and Contact Details */}
             <div className="lg:col-span-7 flex flex-col space-y-8 z-10">
               <div>
-                <h2 className="font-serif text-4xl font-bold tracking-tight text-yoga-olive-dark sm:text-5xl md:text-6xl">
+                <h1 className="text-8xl tracking-tight text-yoga-olive-dark sm:text-7xl md:text-9xl">
                   Contact
-                </h2>
+                </h1>
                 <p className="mt-4 max-w-lg text-sm font-light leading-relaxed text-yoga-olive-dark/80 sm:text-base">
                   Convallis mi volutpat odio semper tincidunt nisi, tincidunt lorem hac et elementum, adipiscing sed mi, tempus metus amet elementum quis orci massa fermentum vel.
                 </p>

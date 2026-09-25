@@ -8,7 +8,7 @@ export default function StudioInfo({ variant = "about" }) {
 
             {/* ==================== HOME LAYOUT ==================== */}
             {isHome ? (
-                <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
+                <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
 
                     {/* ==================== LEFT: STUDIO INFO ==================== */}
                     <div className="space-y-6 lg:col-span-6">
@@ -53,12 +53,12 @@ export default function StudioInfo({ variant = "about" }) {
                         <div className="mb-8 h-0.5 w-12 bg-[#2b6452]" />
 
                         {/* ==================== FIRST PARAGRAPH ==================== */}
-                        <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-lg">
+                        <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-base">
                             Commodo eu hendrerit facilisis viverra vulputate sed turpis odio natoque justo semper mauris enim lorem mattis risus imperdiet pretium, sed vel facilisi arcu, turpis pharetra, eu euismod amet, vestibulum scelerisque bibendum massa.
                         </p>
 
                         {/* ==================== SECOND PARAGRAPH ==================== */}
-                        <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-lg">
+                        <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-base">
                             Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas interdum sed arcu donec risus vestibulum aliquet auctor quam.
                         </p>
 

@@ -88,7 +88,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="relative w-full min-h-[600px] lg:min-h-[700px] flex items-center bg-gray-900 overflow-hidden">
+            <section className="relative w-full min-h-150 lg:min-h-175 flex items-center bg-gray-900 overflow-hidden">
                 {/* Background Image with Overlay */}
                 <div
                     className="absolute inset-0 bg-cover bg-center z-0"

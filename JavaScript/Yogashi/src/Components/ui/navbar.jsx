@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // ==================== SCROLL DETECTION ====================
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => { window.removeEventListener("scroll", handleScroll); };
+  }, []);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -14,52 +25,40 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-yoga-frosted-mint sticky top-0 z-50 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <header className="sticky top-0 z-50 bg-yoga-frosted-mint transition-colors duration-300">
 
-          {/* Logo */}
+      {/* ==================== NAVBAR CONTENT ==================== */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* ==================== LOGO ==================== */}
           <div className="shrink-0">
-            <a href="/" className="text-[1.7rem] faculty-glyphic-regular text-yoga-olive-dark">
+            <Link to="/" className="faculty-glyphic-400 text-[1.7rem] text-yoga-olive-dark">
               Yog<u>a</u>shi
-            </a>
+            </Link>
           </div>
 
           {/* ==================== DESKTOP NAVIGATION LINKS ==================== */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) =>
-              link.href.startsWith("/") ? (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className="text-yoga-olive-dark hover:text-yoga-terracotta font-medium transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-yoga-olive-dark hover:text-yoga-terracotta font-medium transition-colors"
-                >
-                  {link.name}
-                </a>
-              )
-            )}
+          <nav className="hidden items-center space-x-8 lg:flex">
+            {navLinks.map((link) => (
+              <Link key={link.name} to={link.href} className="font-medium text-yoga-olive-dark transition-colors hover:text-yoga-terracotta">
+                {link.name}
+              </Link>
+            ))}
           </nav>
 
-          {/* Desktop CTA Phone Button */}
-          <div className="hidden lg:flex items-center">
-            <a href="#" className="bg-yoga-olive-dark hover:bg-yoga-olive-light text-yoga-frosted-mint px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
-              PHONE NUMBER
+          {/* ==================== DESKTOP CTA ==================== */}
+          <div className="hidden items-center lg:flex">
+            <a href="#" className="rounded-full bg-yoga-olive-dark px-6 py-2.5 font-medium text-yoga-frosted-mint shadow-md transition-all hover:bg-yoga-olive-light hover:shadow-lg">
+              CALL
             </a>
           </div>
 
-          {/* Mobile / Tablet Menu Button (Visible on sm and md screens) */}
-          <div className="flex lg:hidden items-center">
+          {/* ==================== MOBILE MENU BUTTON ==================== */}
+          <div className="flex items-center lg:hidden">
             <button
-              onClick={() => setIsOpen(!isOpen)} type="button" aria-label="Toggle menu"
-              className="text-yoga-olive-dark hover:text-yoga-olive-light focus:outline-none p-2 rounded-md"
+              onClick={() => setIsOpen(!isOpen)}
+              type="button" aria-label="Toggle Menu"
+              className="rounded-md p-2 text-yoga-olive-dark hover:text-yoga-olive-light focus:outline-none"
             >
               {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
             </button>
@@ -67,59 +66,51 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Full-Screen Mobile & Tablet Overlay (sm and md screens) */}
-      {isOpen && (
-        <div className="fixed inset-0 z-50 bg-yoga-olive-light flex flex-col justify-between px-4 py-1.5 lg:hidden animate-fadeIn">
+      {/* ==================== ANIMATED BOTTOM BORDER ==================== */}
+      <div
+        className={` absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-yoga-ochre transition-all duration-700 ease-out
+          ${isScrolled ? "w-[81%]" : "w-[25%]"}
+        `}
+      />
 
-          {/* Overlay Top Bar: Logo & Close Button */}
+      {/* ==================== MOBILE / TABLET OVERLAY ==================== */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex flex-col justify-between bg-yoga-olive-light px-4 py-1.5 lg:hidden animate-fadeIn">
+          {/* ==================== OVERLAY TOP BAR ==================== */}
           <div className="flex items-center justify-between">
-            <a href="#" onClick={() => setIsOpen(false)} className="text-[1.7rem] faculty-glyphic-regular text-yoga-frosted-mint">
+            <Link to="/" onClick={() => setIsOpen(false)} className="faculty-glyphic-regular text-[1.7rem] text-yoga-frosted-mint">
               Yog<u>a</u>shi
-            </a>
+            </Link>
 
             <button
-              onClick={() => setIsOpen(false)} type="button" aria-label="Close menu"
-              className="text-yoga-frosted-mint hover:text-yoga-ochre focus:outline-none p-2"
+              onClick={() => setIsOpen(false)}
+              type="button" aria-label="Close menu"
+              className="p-2 text-yoga-frosted-mint hover:text-yoga-ochre focus:outline-none"
             >
               <HiX size={34} />
             </button>
           </div>
 
           {/* ==================== MOBILE NAVIGATION LINKS ==================== */}
-          <div className="flex flex-col items-center justify-center space-y-6 my-auto">
-            {navLinks.map((link) =>
-              link.href.startsWith("/") ? (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-3xl font-semibold text-yoga-frosted-mint hover:text-yoga-ochre transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-3xl font-semibold text-yoga-frosted-mint hover:text-yoga-ochre transition-colors"
-                >
-                  {link.name}
-                </a>
-              )
-            )}
+          <div className="my-auto flex flex-col items-center justify-center space-y-6">
+
+            {navLinks.map((link) => (
+              <Link
+                key={link.name} to={link.href} onClick={() => setIsOpen(false)}
+                className="text-3xl font-semibold text-yoga-frosted-mint transition-colors hover:text-yoga-ochre"
+              >
+                {link.name}
+              </Link>
+            ))}
+
           </div>
 
-          {/* Overlay Bottom CTA Button */}
+          {/* ==================== OVERLAY BOTTOM CTA ==================== */}
           <div className="flex flex-col items-center pb-6">
-            <a
-              href="#" onClick={() => setIsOpen(false)}
-              className="w-full text-center bg-yoga-terracotta text-yoga-frosted-mint py-3.5 rounded-full font-semibold text-lg shadow-lg hover:bg-[#a55d1f] transition-all"
-            >
-              PHONE NUMBER
+            <a href="#" onClick={() => setIsOpen(false)} className="w-full rounded-full bg-yoga-terracotta py-3.5 text-center text-lg font-semibold text-yoga-frosted-mint shadow-lg transition-all hover:bg-[#a55d1f]">
+              CALL
             </a>
           </div>
-
         </div>
       )}
     </header>
