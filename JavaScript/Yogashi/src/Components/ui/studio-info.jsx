@@ -41,19 +41,19 @@ export default function StudioInfo({ variant = "about" }) {
                         <div className="mb-8 h-0.5 w-12 bg-yoga-terracotta" />
 
                         <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-base">
-                            Commodo eu hendrerit facilisis viverra vulputate sed turpis odio natoque justo 
-                            semper mauris enim lorem mattis risus imperdiet pretium, sed vel facilisi arcu, 
+                            Commodo eu hendrerit facilisis viverra vulputate sed turpis odio natoque justo
+                            semper mauris enim lorem mattis risus imperdiet pretium, sed vel facilisi arcu,
                             turpis pharetra, eu euismod amet, vestibulum scelerisque bibendum massa.
                             Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris
                         </p>
 
                         <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-base">
                             at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas
-                            felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna  
+                            felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna
                             interdum sed arcu donec risus vestibulum aliquet auctor quam.
-                            Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris 
-                            felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna 
-                            at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas 
+                            Neque felis cras nunc magna turpis tincidunt enim facilisi orci sed id est mauris
+                            felis parturient accumsan sapien nunc nibh dignissim neque nec, molestie vel magna
+                            at et urna vulputate ut etiam in mattis est egestas penatibus vitae maecenas
                             interdum sed arcu donec risus vestibulum aliquet auctor quam.
                         </p>
                     </div>
@@ -62,32 +62,26 @@ export default function StudioInfo({ variant = "about" }) {
             ) : (
 
                 /* ==================== ABOUT LAYOUT ==================== */
-                <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 md:grid-cols-3 md:gap-12 lg:gap-16">
-
-                    {/* ==================== COLUMN 1: HEADING ==================== */}
+                <div className="mx-auto grid max-w-[92%] grid-cols-1 items-start gap-10 md:grid-cols-3 md:gap-12 lg:gap-16">
                     <div>
                         <h2 className="font-serif text-4xl leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
                             Yoga Studio in the City of New York
                         </h2>
                     </div>
 
-                    {/* ==================== COLUMN 2: FIRST PARAGRAPH ==================== */}
                     <div>
                         <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-lg">
                             Est suspendisse laoreet morbi donec dictumst quam. Et in donec pulvinar ullamcorper ante. Erat in scelerisque sed nulla tellus, massa eu elementum. Tortor, in risus euismod diam, egestas in at volutpat fusce. Habitant adipiscing elementum ultrices laoreet nullam potenti malesuada rhoncus semper. Nam integer ac mauris ipsum tortor.
                         </p>
                     </div>
 
-                    {/* ==================== COLUMN 3: SECOND PARAGRAPH ==================== */}
                     <div>
                         <p className="font-sans text-base leading-relaxed text-[#2c4037] sm:text-lg">
                             Leo sagittis consequat donec nulla vel aliquet cursus odio sed. Id enim turpis quis lectus. Pulvinar sed cras amet, tincidunt. Vitae mattis enim velit enim, dui enim. Est porta sit ullamcorper non morbi aliquam phasellus. Porttitor sed adipiscing sem congue consequat commodo mi in pretium.
                         </p>
                     </div>
-
                 </div>
             )}
-
         </section>
     );
 }
