@@ -27,10 +27,9 @@ export default function About() {
             <StudioInfo />
 
             <section className="bg-[#edf4ee] px-6 pb-10 text-[#1a2e26] sm:pb-10 md:px-16 lg:px-24">
-                <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-16">
+                <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-2 lg:grid-cols-12 lg:gap-16">
 
                     <div className="relative flex min-h-95 items-center justify-center sm:min-h-110 lg:col-span-6 lg:min-h-140">
-
                         <div className="absolute h-72 w-72 rounded-full bg-white shadow-sm sm:h-80 sm:w-80 md:h-96 md:w-96 lg:h-112.5 lg:w-112.5" />
 
                         <div className="relative z-10 flex h-full w-full items-end justify-center">
@@ -44,7 +43,6 @@ export default function About() {
                                 Aashivani
                             </span>
                         </div>
-
                     </div>
 
                     {/* ==================== RIGHT: QUOTE & AUTHOR INFO ==================== */}
