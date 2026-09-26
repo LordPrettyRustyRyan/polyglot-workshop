@@ -59,7 +59,6 @@ export default function Classes() {
                                     <h3 className="mb-2 faculty-glyphic-400 text-sm font-semibold tracking-wider text-yoga-olive-dark md:text-base">
                                         IMPROVE FLEXIBILITY
                                     </h3>
-
                                     <p className="text-xs leading-relaxed text-yoga-olive-dark/70 md:text-sm">
                                         Eu egestas nunc, congue et mauris sed venenatis at volutpat.
                                     </p>
@@ -69,7 +68,6 @@ export default function Classes() {
                                     <h3 className="mb-2 faculty-glyphic-400 text-sm font-semibold tracking-wider text-yoga-olive-dark md:text-base">
                                         MUSCLES STRENGTH
                                     </h3>
-
                                     <p className="text-xs leading-relaxed text-yoga-olive-dark/70 md:text-sm">
                                         Eu egestas nunc, congue et mauris sed venenatis at volutpat.
                                     </p>
@@ -79,7 +77,6 @@ export default function Classes() {
                                     <h3 className="mb-2 faculty-glyphic-400 text-sm font-semibold tracking-wider text-yoga-olive-dark md:text-base">
                                         PERFECTS POSTURE
                                     </h3>
-
                                     <p className="text-xs leading-relaxed text-yoga-olive-dark/70 md:text-sm">
                                         Eu egestas nunc, congue et mauris sed venenatis at volutpat.
                                     </p>
@@ -89,7 +86,6 @@ export default function Classes() {
                                     <h3 className="mb-2 faculty-glyphic-400 text-sm font-semibold tracking-wider text-yoga-olive-dark md:text-base">
                                         INCREASE BLOOD FLOW
                                     </h3>
-
                                     <p className="text-xs leading-relaxed text-yoga-olive-dark/70 md:text-sm">
                                         Eu egestas nunc, congue et mauris sed venenatis at volutpat.
                                     </p>

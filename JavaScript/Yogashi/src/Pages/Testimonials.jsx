@@ -50,13 +50,12 @@ export default function Testimonials() {
             <section className="w-full shadow-md font-sans">
                 {/* Top Hero Banner */}
                 <div className="relative bg-yoga-tropical-teal py-24 px-6 md:px-12 text-center overflow-hidden flex items-center justify-center">
-                    {/* Subtle decorative background mandala outline effect */}
-                    <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
-                        <div className="w-150 h-150 rounded-full border-2 border-yoga-olive-dark"></div>
-                        <div className="absolute w-112.5 h-112.5 rounded-full border border-yoga-olive-dark"></div>
+                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-10">
+                        <img src="/mandala-right.png" alt="" aria-hidden="true"
+                            className="h-auto w-[320px] max-w-[90%] object-contain sm:w-112.5 md:w-137.5 lg:w-180"
+                        />
                     </div>
 
-                    {/* Main Title */}
                     <h1 className="relative z-10 font-serif text-5xl md:text-7xl text-yoga-olive-dark font-normal tracking-wide">
                         Testimonials
                     </h1>
@@ -135,37 +134,32 @@ export default function Testimonials() {
                 </div>
             </section>
 
-<FeaturedReview/>
+            <FeaturedReview />
 
-            <section className="bg-[#eaf4ec] py-16 px-6 md:px-12 lg:px-24 min-h-screen flex items-center">
-                <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+            <section className="bg-[#eaf4ec] px-6 py-20 md:px-12 lg:px-24 lg:py-24">
+                <div className="mx-auto grid w-full max-w-[90%] grid-cols-1 gap-x-12 gap-y-20 md:grid-cols-2 lg:gap-x-4 lg:gap-y-12">
                     {testimonialsData.map((item) => (
-                        <div key={item.id} className="flex flex-col space-y-4">
-                            {/* Avatar */}
-                            <div className="w-14 h-14 rounded-full overflow-hidden shadow-sm">
-                                <img
-                                    src={item.image}
-                                    alt={item.name}
-                                    className="w-full h-full object-cover"
-                                />
+                        <div key={item.id}
+                            className="relative border border-white px-7 pb-8 pt-12 sm:px-9 sm:pb-9 sm:pt-14
+                                transition-all duration-300 hover:border-white/40 hover:shadow-sm
+                            "
+                        >
+                            <div className="absolute left-7 top-0 -translate-y-6 sm:left-9">
+                                <div className="h-16 w-16 overflow-hidden rounded-full bg-white shadow-sm sm:h-20 sm:w-20">
+                                    <img src={item.image} alt={item.name} className="h-full w-full object-cover" />
+                                </div>
                             </div>
 
-                            {/* Stars */}
-                            <div className="flex space-x-1 text-emerald-500 text-sm">
-                                {[...Array(5)].map((_, i) => (
-                                    <span key={i}>★</span>
-                                ))}
+                            <div className="flex flex-row justify-between items-center mt-7">
+                                <div className="flex gap-1 text-yoga-ochre">
+                                    {[...Array(5)].map((_, i) => (
+                                        <FaStar key={i} className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                                    ))}
+                                </div>
+                                <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-yoga-olive-dark"> {item.name} </h4>
                             </div>
 
-                            {/* Testimonial Quote */}
-                            <p className="text-gray-700 text-sm md:text-base leading-relaxed font-normal">
-                                {item.text}
-                            </p>
-
-                            {/* Name */}
-                            <h4 className="text-xs font-bold tracking-widest text-gray-900 pt-1">
-                                {item.name}
-                            </h4>
+                            <p className="mt-5 font-serif text-base leading-relaxed text-yoga-olive-dark/75 sm:text-md"> {item.text} </p>
                         </div>
                     ))}
                 </div>
