@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@keyframes floatingDance {
+  0% {
+    transform: translate3d(
+      calc(var(--dance-distance) * -0.4),
+      calc(var(--dance-distance) * -1),
+      0
+    )
+    rotate(-2deg);
+  }
+
+  25% {
+    transform: translate3d(
+      var(--dance-distance),
+      calc(var(--dance-distance) * -0.2),
+      0
+    )
+    rotate(2deg);
+  }
+
+  50% {
+    transform: translate3d(
+      calc(var(--dance-distance) * 0.3),
+      var(--dance-distance),
+      0
+    )
+    rotate(-1deg);
+  }
+
+  75% {
+    transform: translate3d(
+      calc(var(--dance-distance) * -1),
+      calc(var(--dance-distance) * 0.2),
+      0
+    )
+    rotate(2deg);
+  }
+
+  100% {
+    transform: translate3d(
+      calc(var(--dance-distance) * -0.4),
+      calc(var(--dance-distance) * -1),
+      0
+    )
+    rotate(-2deg);
+  }
+}
