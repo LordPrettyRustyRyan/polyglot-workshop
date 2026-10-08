@@ -4,10 +4,12 @@ import Testimonials from "./Pages/Testimonials";
 import Classes from "./Pages/Classes";
 import About from "./Pages/About";
 import Contacts from "./Pages/Contacts";
+import ScrollToTop from "./Components/ui/scroll-to-top";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contacts />} />

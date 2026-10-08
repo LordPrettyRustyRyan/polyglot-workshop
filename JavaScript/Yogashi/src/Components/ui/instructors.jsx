@@ -3,22 +3,22 @@ import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 export default function Instructors() {
   const instructorsData = [
     {
-      name: "Ellen Sherman",
+      name: "Ashi",
       image: "/instructor-1.jpg",
       socials: { facebook: "#", twitter: "#", youtube: "#" },
     },
     {
-      name: "Christina Latham",
+      name: "Aashi",
       image: "/instructor-2.jpg",
       socials: { facebook: "#", twitter: "#", youtube: "#" },
     },
     {
-      name: "Lucie Stryker",
+      name: "Aashivani",
       image: "/instructor-3.jpg",
       socials: { facebook: "#", twitter: "#", youtube: "#" },
     },
     {
-      name: "Gloria Benner",
+      name: "Ashi Again",
       image: "/instructor-4.jpg",
       socials: { facebook: "#", twitter: "#", youtube: "#" },
     },

@@ -41,7 +41,7 @@ export default function Contacts() {
                     Our Location
                   </span>
                   <p className="faculty-glyphic-400 text-xl sm:text-2xl font-bold text-yoga-olive-dark mt-1 leading-snug">
-                    123 Fifth Avenue, New York, NY 12004, USA.
+                    123 Cloud 9, Chandigarh, CHD 160020, IND.
                   </p>
                 </div>
               </div>
